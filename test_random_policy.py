@@ -24,11 +24,17 @@ def main():
 	# env = gym.make('CustomHopper-target-v0')
 
 	print('State space:', env.observation_space) # state-space
+	print('Is state space discrete?', isinstance(env.observation_space, gym.spaces.Discrete))
+	
+	print('')
+	
 	print('Action space:', env.action_space) # action-space
+	print('Is state action discrete?', isinstance(env.action_space, gym.spaces.Discrete))
+
 	print('Dynamics parameters:', env.get_parameters()) # masses of each link of the Hopper
 
 	n_episodes = 500
-	render = True
+	render = False
 
 	for episode in range(n_episodes):
 		done = False
