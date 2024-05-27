@@ -1,0 +1,1 @@
+# TODO: Create an starting point for the application to get the algorithm and it's parameters from input and run the algorithm
